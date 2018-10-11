@@ -232,10 +232,10 @@
    *   invoke this function expression passing 2 arguments
    *     event, 'light-green'
    */
-  btn13.addEventListener('click',function(event){
-  setMyLightClass.bind(this)(event,'light-green')
+  btn13.addEventListener('click', function (event) {
+    setMyLightClass.bind(this)(event, 'light-green')
   })
-  
+
 
   /*
    * Add a click event listener to btn14
@@ -243,7 +243,7 @@
    * that is the result of invoking the Function prototype method, bind
    * on the setMyLightGreen function
    */
-  btn14.addEventListener('click',(function (){
+  btn14.addEventListener('click', (function () {
     setMyLightGreen.bind(this)()
   }))
 
@@ -256,7 +256,7 @@
    * Hint: Do not declare a new function expression as an event handler.
    */
 
-  btn15.addEventListener('click',setMyLightGreen.bind(btn15,event,'light-green'))
+  btn15.addEventListener('click', setMyLightGreen.bind(btn15, null, 'light-green'))
 
 
 }(window));
